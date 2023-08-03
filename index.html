@@ -4,21 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>What is my YouTube ID?</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    
 </head>
 <body>
-  <main>
-    <h1>Find out the ID of a YouTube channel</h1>
-    <label>Paste a video or YouTube channel link:</label>
-    <br>
-    <input type="url" id="link">
-    <br>
-    <button onclick="search()">Search ID</button>
-    <p id="videoInfos" style="display: none;">
-      <span id="channelTitle"></span>
-      <br>
-      ID: <span id="channelId"></span>
-    </p>
-  </main>
+
+  <div class="container">
+    <div class="section">
+      <div class="row center">
+
+        <h1 class="header red-text text-darken-2">
+          Find out the ID of a YouTube channel
+        </h1>
+
+        <p class="header col s12 light">
+          Paste a video or YouTube channel link:
+        </p>
+
+        <div class="input-field col s12">
+          <i class="material-icons prefix">link</i>
+          <input type="url" id="link" placeholder="https://youtube.com/">
+          <br>
+        </div>
+
+        <button class="btn red" onclick="search()">
+          <i class="material-icons right">search</i>
+          Search ID
+        </button>
+
+        <p id="videoInfos" style="display: none;">
+          <span id="channelTitle"></span>
+          <br>
+          ID: <span id="channelId"></span>
+        </p>
+
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 </html>
