@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is my YouTube ID?</title>
+</head>
+<body>
+  <main>
+    <h1>Find out the ID of a YouTube channel</h1>
+    <label>Paste a video or YouTube channel link:</label>
+    <br>
+    <input type="url" id="link">
+    <br>
+    <button onclick="search()">Search ID</button>
+    <p id="videoInfos" style="display: none;">
+      <span id="channelTitle"></span>
+      <br>
+      ID: <span id="channelId"></span>
+    </p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
